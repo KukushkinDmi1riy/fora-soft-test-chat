@@ -8,7 +8,7 @@
 .wrapper {
   max-width: 40%;
   margin: 100px auto;
-  min-width: 720px;
+  width: 720px;
 }
 
 .join-block {
@@ -44,7 +44,7 @@
 .chat-users {
   border-right: 1px solid rgba(159, 183, 197, 0.1);
   padding: 20px;
-  width: 200px;
+  width: 175px;
   background-color: #f6f9fa;
 }
 
@@ -99,6 +99,7 @@
   padding: 10px 15px 15px;
   color: #fff;
   margin-bottom: 2px;
+  word-break: break-all;
 }
 
 .message span {
@@ -130,4 +131,55 @@
 .chat-messages form textarea {
   width: 100%;
   margin-bottom: 10px;
+}
+
+
+@media (max-width: 415px) {
+  .wrapper {
+    font-size: 16px;
+    max-width: 96%;
+  }
+
+  .join-block {
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 416px) and (max-width: 750px) {
+  .wrapper {
+    font-size: 16px;
+    max-width: 80%;
+  }
+
+  .join-block {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .chat {
+    display: flex;
+    height: 100%;
+    border: 1px solid rgba(159, 183, 197, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .chat-users {
+    border-right: 1px solid rgba(159, 183, 197, 0.1);
+    padding: 20px;
+    width: 100%;
+    background-color: #f6f9fa;
+  }
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    overflow: scroll;
+    flex: auto;
+  }
 }
