@@ -14,6 +14,7 @@ function App() {
     userName: null,
     users: [],
     messages: [],
+    time: []
   });
 
   const onLogin = async (obj) => {

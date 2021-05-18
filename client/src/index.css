@@ -66,6 +66,10 @@
   margin-bottom: 20px;
 }
 
+.message .time{
+  float: right;
+}
+
 .message-right {
   margin-bottom: 20px;
   float: right;
